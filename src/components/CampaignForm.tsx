@@ -22,10 +22,10 @@ enum CampaignGoal {
 
 const CampaignForm: React.FC<CampaignFormProps> = ({ onSubmit }) => {
   const [formState, setFormState] = useState<Campaign>({
-    name: '',
-    budget: 0,
+    name: 'My Campaign',
+    budget: 500,
     targetAudience: '',
-    goal: CampaignGoal.Reach,
+    goal: CampaignGoal.Conversion,
   });
 
   /** 
